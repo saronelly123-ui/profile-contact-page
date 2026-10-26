@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal profile and contact page">
+    <title>My Profile | Contact Page</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #243047;
+            background-color: #f4f7fb;
+        }
+
+        header {
+            background: linear-gradient(135deg, #173b70, #3979c3);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #102b50;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: #a9d5ff;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        article,
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+        }
+
+        h2 {
+            color: #173b70;
+            font-size: 1.8rem;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            color: #285b96;
+            margin: 22px 0 10px;
+        }
+
+        article img {
+            display: block;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #d8e8fb;
+            margin: 20px auto;
+        }
+
+        article p {
+            margin-bottom: 15px;
+        }
+
+        article ul,
+        article ol {
+            padding-left: 25px;
+        }
+
+        #contact > p {
+            margin-bottom: 20px;
+        }
+
+        form > div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            font: inherit;
+            background-color: #fff;
+            color: #243047;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 3px solid #bfdbfe;
+            border-color: #2563eb;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #2563eb;
+            vertical-align: middle;
+        }
+
+        form > div:has(input[type="checkbox"]) label {
+            display: inline;
+            margin-left: 6px;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            padding: 13px 24px;
+            border: none;
+            border-radius: 7px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #173b70;
+        }
+
+        button:focus-visible {
+            outline: 3px solid #93c5fd;
+            outline-offset: 3px;
+        }
+
+        footer {
+            background-color: #102b50;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 35px 15px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            main {
+                margin: 20px auto;
+                padding: 0 12px;
+            }
+
+            article,
+            section {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+.profile-avatar {
+    width: 160px;
+    height: 160px;
+    margin: 20px auto;
+    border: 4px solid #d8e8fb;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-avatar svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+    </style>
+</head>
+
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my profile and contact page.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="about">
+            <h2>About Me</h2>
+
+            
+
+<div class="profile-avatar" role="img" aria-label="Illustration representing my personal profile">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 200 200"
+        aria-hidden="true"
+    >
+        <circle cx="100" cy="100" r="100" fill="#dbeafe"/>
+        <circle cx="100" cy="72" r="34" fill="#64748b"/>
+        <path
+            d="M35 190 C38 143 63 120 100 120
+               C137 120 162 143 165 190 Z"
+            fill="#2563eb"
+        />
+    </svg>
+</div>
+
+
+            <p>
+                Hello! My name is Nelly. I am interested in technology,
+                web development, and learning new skills.
+            </p>
+
+            <h3>My Skills</h3>
+            <ul>
+                <li>HTML and web development</li>
+                <li>Problem solving</li>
+                <li>Communication and teamwork</li>
+            </ul>
+
+            <h3>My Goals</h3>
+            <ol>
+                <li>Improve my coding skills.</li>
+                <li>Build accessible websites.</li>
+                <li>Become a professional web developer.</li>
+            </ol>
+        </article>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <p>Complete the form below to get in touch with me.</p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="full-name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="fullName"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="category">Inquiry Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">-- Select a category --</option>
+                        <option value="general">General Question</option>
+                        <option value="work">Work Opportunity</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                        value="yes"
+                    >
+                    <label for="newsletter">
+                        Subscribe to my newsletter
+                    </label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Personal Profile. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
